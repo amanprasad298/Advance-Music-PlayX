@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/sds"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:gravity="center"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="290sp"
+            android:layout_height="290sp"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/as"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:id="@+id/songLabel"
+            android:scrollHorizontally="true"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="60sp"
+
+                />
+            
+            <Button
+                android:layout_width="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_height="60sp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pause"
+                android:id="@+id/pause"/>
+
+            <Button
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/next"
+                android:layout_toRightOf="@id/pause"
+                android:layout_marginTop="18sp"
+                android:background="@drawable/next"/>
+
+            <Button
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/prev"
+                android:layout_toLeftOf="@id/pause"
+                android:layout_marginTop="18sp"
+                android:background="@drawable/prev"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
